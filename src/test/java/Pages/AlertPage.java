@@ -20,7 +20,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
 /**
- * A page for alerts
+ * A page for alerts as sample
  */
 public class AlertPage extends BasePage {
     /**
