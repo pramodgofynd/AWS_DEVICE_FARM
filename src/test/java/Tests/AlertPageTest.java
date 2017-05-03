@@ -17,6 +17,9 @@ package Tests;
 
 import Pages.AlertPage;
 import Tests.AbstractBaseTests.TestBase;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -27,7 +30,7 @@ import org.testng.annotations.Test;
 public class AlertPageTest extends TestBase {
     private static final String ALERT_MESSAGE = "This is the alert message";
     private AlertPage alertPage;
-
+    
     @Override
     public String getName() {
         return "Alerts";
@@ -46,11 +49,16 @@ public class AlertPageTest extends TestBase {
      * Tests the alert view by clicking the alert view button,
      * then verifying the alert view message, and then
      * accepting the alert view message.
+     * @throws InterruptedException 
      */
     @Test
-    public void testAlertMessage(){
-        alertPage.clickAlertsButton();
-        Assert.assertEquals(alertPage.getAlertText(), ALERT_MESSAGE);
-        alertPage.acceptAlertMessage();
+    public void testAlertMessage() throws InterruptedException{
+        //alertPage.clickAlertsButton();
+        Thread.sleep(3000);
+        alertPage.clickFacebookButton();
+        System.out.println("facebookbutton is clicked");
+        Thread.sleep(3000);
+        //Assert.assertEquals(alertPage.getAlertText(), ALERT_MESSAGE);
+        //alertPage.acceptAlertMessage();
     }
 }

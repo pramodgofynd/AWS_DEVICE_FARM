@@ -18,8 +18,12 @@ package Pages;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
@@ -34,6 +38,7 @@ public abstract class BasePage {
      * The driver
      */
     protected final AppiumDriver driver;
+    
 
     /**
      * A base constructor that sets the page's driver
@@ -50,6 +55,8 @@ public abstract class BasePage {
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver, 5, TimeUnit.SECONDS), this);
     }
+    
+
 
     /**
      * Tries three times to send text to element properly.

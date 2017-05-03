@@ -55,9 +55,9 @@ public class CheckboxTest extends InputTests {
      * Verifies whether checked message appears on the screen once
      * the checkbox is checked.
      */
-    @Test
-    public void testCheckBox() {
-        checkBoxPage.touchCheckBox();
-        Assert.assertEquals(checkBoxPage.getCheckBoxDisplay(), CHECKED_VALUE);
-    }
+//    @Test
+//    public void testCheckBox() {
+//        checkBoxPage.touchCheckBox();
+//        Assert.assertEquals(checkBoxPage.getCheckBoxDisplay(), CHECKED_VALUE);
+//    }
 }

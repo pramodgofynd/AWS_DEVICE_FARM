@@ -18,7 +18,11 @@ package Tests.AbstractBaseTests;
 import Pages.NavigationPage;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
 import java.net.MalformedURLException;
@@ -36,6 +40,7 @@ public abstract class TestBase {
      * and used across all of the test classes.
      */
     public static AndroidDriver<MobileElement> driver;
+    public static Wait<WebDriver> wait;
 
     /**
      * This allows the navigation to work within the app.
@@ -85,6 +90,10 @@ public abstract class TestBase {
         driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
     }
 
+    
+
+    
+    
     /**
      * Always remember to quit
      */
@@ -101,8 +110,7 @@ public abstract class TestBase {
      */
     @BeforeClass
     public void navigateTo() throws InterruptedException {
-        navigationPage = new NavigationPage(driver);
-        navigationPage.gotoCategory(getName());
+
     }
 
     /**
