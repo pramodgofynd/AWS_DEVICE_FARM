@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="Tests.AlertPageTest">
+        <methods>
+          <include name="testAlertMessage"/>
+          <include name="setUpAppium"/>
+          <include name="restartApp"/>
+          <include name="setUpPage"/>
+          <include name="navigateTo"/>
+        </methods>
+      </class> <!-- Tests.AlertPageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
