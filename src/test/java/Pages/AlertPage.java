@@ -108,9 +108,9 @@ public class AlertPage extends BasePage {
     	//waitgetForPageLoadAndroid(30).until(ExpectedConditions.presenceOfElementLocated(FbButton)).click();
     	facebookButton.click();
     	Thread.sleep(2000);
-    	//awsNexusMachineSetup();
+    	awsNexusMachineSetup();
     	
-    	localMachineSetup();
+    	//localMachineSetup();
     	//allowContactAccess.click();
     	//Thread.sleep(3000);
     	//selectBanner();
