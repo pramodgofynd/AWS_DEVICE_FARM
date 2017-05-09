@@ -40,7 +40,7 @@ public abstract class TestBase {
      * and used across all of the test classes.
      */
     public static AndroidDriver<MobileElement> driver;
-    public static Wait<WebDriver> wait;
+    
 
     /**
      * This allows the navigation to work within the app.

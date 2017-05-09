@@ -8,6 +8,7 @@
           <include name="testAlertMessage"/>
           <include name="setUpAppium"/>
           <include name="restartApp"/>
+          <include name="tearDownAppium"/>
           <include name="setUpPage"/>
           <include name="navigateTo"/>
         </methods>

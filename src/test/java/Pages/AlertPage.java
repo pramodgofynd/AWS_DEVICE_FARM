@@ -31,7 +31,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 /**
  * A page for alerts as sample
  */
-public class AlertPage extends BasePage {
+public class AlertPage extends BasePage  {
     /**
      * The alert button
      */
@@ -108,8 +108,8 @@ public class AlertPage extends BasePage {
     	//waitgetForPageLoadAndroid(30).until(ExpectedConditions.presenceOfElementLocated(FbButton)).click();
     	facebookButton.click();
     	Thread.sleep(2000);
-    	awsNexusMachineSetup();
-    	
+    	//awsNexusMachineSetup();
+    	localMachineSetup();
     	//localMachineSetup();
     	//allowContactAccess.click();
     	//Thread.sleep(3000);
@@ -145,17 +145,18 @@ public class AlertPage extends BasePage {
     	//chromeNoThanksButton.click();
     	//Thread.sleep(2000);
     	//waitgetForPageLoadAndroid(30).until(ExpectedConditions.presenceOfElementLocated(fbusername));
-    	fbusername.sendKeys("pramod.kumar03@exclusively.com");
-    	Thread.sleep(2000);
-    	password.sendKeys("ah@2305208606");
-    	Thread.sleep(2000);
-    	logIn.click();
-    	Thread.sleep(6000);
+    	//fbusername.sendKeys("pramod.kumar03@exclusively.com");
+    	//Thread.sleep(2000);
+    	//password.sendKeys("ah@2305208606");
+    	//Thread.sleep(2000);
+    	//logIn.click();
+    	//Thread.sleep(6000);
     	FbAuthroization.click();
     	Thread.sleep(5000);
     	FbContinue.click();
     	Thread.sleep(15000);
     	allowContactAccess.click();
+
 
     }
     

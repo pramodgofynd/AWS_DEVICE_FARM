@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\pam\AppData\Local\Temp\testng-eclipse-362180059\testng-customsuite.xml</span>
+                    <span>C:\Users\pam\AppData\Local\Temp\testng-eclipse--665376902\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -127,18 +127,18 @@
                   <a name="testAlertMessage">
                   </a> <!-- testAlertMessage -->
                   <span class="method-name">testAlertMessage</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:809)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	at Pages.AlertPage.localMachineSetup(AlertPage.java:147)
-	at Pages.AlertPage.clickFacebookButton(AlertPage.java:113)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: Locator map: 
+- native content: &quot;By.AndroidUIAutomator: new UiSelector().className(&quot;android.widget.Button&quot;).instance(1)&quot; 
+- html content: &quot;by id or name &quot;FbAuthroization&quot;&quot;
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;PAM123&apos;, ip: &apos;169.254.197.17&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:169)
+	at io.appium.java_client.pagefactory.ElementInterceptor.intercept(ElementInterceptor.java:30)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$3d6c7416.click(&lt;generated&gt;)
+	at Pages.AlertPage.localMachineSetup(AlertPage.java:154)
+	at Pages.AlertPage.clickFacebookButton(AlertPage.java:112)
 	at Tests.AlertPageTest.testAlertMessage(AlertPageTest.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -173,7 +173,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\pam\AppData\Local\Temp\testng-eclipse-362180059\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\pam\AppData\Local\Temp\testng-eclipse--665376902\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -226,12 +226,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testAlertMessage')
 data.setCell(0, 2, 'Tests.AlertPageTest')
-data.setCell(0, 3, 229280);
+data.setCell(0, 3, 10575);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -264,24 +264,26 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setUpPage</span>
-                <span class="method-start">16807 ms</span>
+                <span class="method-start">21884 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">navigateTo</span>
-                <span class="method-start">17081 ms</span>
+                <span class="method-start">22015 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testAlertMessage</span>
-                <span class="method-start">17084 ms</span>
+                <span class="method-start">22016 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">restartApp</span>
-                <span class="method-start">246379 ms</span>
+                <span class="method-start">32603 ms</span>
               </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownAppium</span>
+                <span class="method-start">42548 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
